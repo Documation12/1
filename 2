@@ -1,0 +1,251 @@
+/* OFFICIAL aim7 CSS */
+/*  Private Version  */
+/* Update Version #5 */
+
+/*NameRoot*/
+
+:root {
+    --Name:"诶艾开";
+    --Clan:" [娜开弗]";
+    --color: #ffffff;
+    --Watermark: "诶艾开";
+    --accent: #ffffff;
+}
+
+/*UIStreched*/
+#uiBase {
+    height: 125% !important;
+    width: 80% !important;
+    transform: scale(1.25, 0.8) !important;
+}
+
+
+
+/* Removal */
+
+#aHolder,
+.endAHolder,
+#topRightAdHolder,
+#merchImg,
+#onetrust-consent-sdk,
+#braveWarning,
+#newsHolder,
+#streamContainer,
+#newUserGuide,
+#krDiscountAd,
+#updateAd, 
+#editorBtnM,
+.verticalSeparator,
+.terms.standout,
+.verticalSeparatorInline,
+.terms,
+#termsInfo,
+.menuWindowSideL,
+.windowHeader,
+.menuSocialB,
+#menuBtnProfile,
+#menuBtnShop,
+#menuBtnChall,
+#menuBtnSocial, 
+#menuBtnMaps,
+#menuBtnMods,
+#menuBtnSettings,
+#mainLogo,
+#freeKRAd,
+#timerIcon,
+#rankedBlog,
+#doubleXPAd,
+#seasonLabel,
+#menuClassNameTag,
+#doubleClassXPAd,
+#mainLogoFace,
+.menuItem[onclick$="showWindow(49)"],
+#tlInfHold,
+#ammoIcon,
+#bottomLeftChallIcon,
+.weapKey, 
+.weapStreak, 
+.weapSkin,
+.weapStreakHolder {
+    display : none !important;
+}
+
+.greyInner, .greyInlineInner {
+    background-color: rgb(108 108 108 / 0%);
+   
+}
+
+
+/*Ammo*/
+
+
+#ammoHolder {
+	position: fixed;
+	background-color: transparent;
+	background-image:linear-gradient(to right,white,white);
+	transform: unset;
+	width: 25px;
+	height: 4px;
+	size: 20px;
+	top: calc(50% + 35px);
+	left: calc(50% - 15px);
+
+	
+}
+
+#ammoVal {
+	text-shadow: 7px 7px 3px rgba(30, 30, 30, .5);
+	position: fixed;
+	font-size: 75px;
+	left: calc(50% + 175px);
+	right: 30%;
+	bottom: 50px;
+	color: white;
+	font-family: gamefont;
+	letter-spacing: 2px;
+}
+
+#ammoMax {
+	display: none !important;
+}
+
+#ammoIcon {
+	display: none !important;
+}
+
+
+
+/*Weapon*/
+
+.weapKey, 
+.weapStreak, 
+.weapSkin,
+.weapStreakHolder {
+    display: none !important;
+}
+
+#weapHolder {
+	display: flex !important;
+	flex-direction: row !important;
+	bottom: 20px;
+	right: 50%;
+	transform: translateX(50%);
+}
+
+.weapItemInner, .weapItem {
+    background-color: transparent;
+}
+
+
+/*Health*/
+
+
+#bottomLeftChallIcon {
+	display: none !important;
+}
+
+
+#bottomLeftHealthBar {
+	width: 300px;
+	height: 33px;
+	display: inline-flex;
+	justify-content: center;
+	background-color: transparent;
+	border-radius: 1;
+	position: fixed;
+	left: calc(50% - 160px);
+	bottom: 85px;
+	outline: 9px solid var(--hp-ammo);
+	filter: drop-shadow(7px 7px 3px rgba(30, 30, 30, .5));
+    visibility: visible !important;
+}
+
+.nHealthBarSeg {
+	width: -webkit-fill-available;
+	height: 30px;
+	margin: 0 -5px;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.nHpBSeg {
+	border-radius: 0;
+	box-shadow: none;
+}
+
+
+
+/*Matchinfo*/
+
+#matchInfo {
+	font-size:0;
+}
+#matchInfo:after {
+	font-size:35px;
+	content: var(--Watermark);
+	color: #fff;
+	opacity: 75%;
+	text-shadow: 0 0 2px #000000;
+}
+
+
+/*Hud Icon*/
+#bottomLeftClassImg {
+    content: url(https://cdn.discordapp.com/attachments/837021761358004294/1118120224923865178/desktop-wallpaper-guns-aesthetic.jpg);
+    width: 120%;
+    height: 120%;
+    visibility: visible !important;
+}
+
+/*Hud Left*/
+
+#bottomLeftHolder {
+    visibility: hidden !important;
+}
+
+
+/*Timer*/
+
+
+#timerInner.topLeftOld, #timerHolder.topLeftOld {
+	background-color: transparent;
+    transform: translate(-4px, 0px);
+}
+
+/*Name*/
+
+.leaderNameM:before {
+    content: var(--Name) !important;
+    font-size:18px !important;
+    visibility: visible !important;
+    color:white !important;
+    text-shadow: 0 0 2px #000000;
+}
+.leaderNameM span:after {
+    visibility:visible !important;
+    content: var(--Clan) !important;
+    font-size:18px !important;
+    color: var(--color) !important;
+}
+
+.leaderNameM,.leaderNameM span {
+    font-size:0px !important;
+    visibility:hidden;
+
+}
+
+/*Counters*/
+
+.topRightCounters {
+    position: fixed;
+    bottom: 40%;
+	right: 10px;
+    transform: translateY(50%);
+	flex-direction: column !important;
+	display: flex !important;
+
+}
+
+.statIcon {
+    background-color: transparent;
+}
